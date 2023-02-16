@@ -1,0 +1,28 @@
+---
+const {
+    img='assets/img/chefs/chefs-3.jpg',
+    alt='Cristian Gramajo',
+    title='Cristian Gramajo',
+    desc='chef asistente',
+    socials=[
+        {social:'facebook', url:'https://www.facebook.com/cristianismael.gramajo'},
+        {social:'instagram', url:'https://www.instagram.com/cristiangramajo015/?theme=dark'},
+        {social:'twitter', url:'https://twitter.com/Cristian021195'}
+    ]
+} = Astro.props;
+---
+
+<div class="member d-flex align-items-center" data-aos-delay="300" style="height: 25em;">
+    <img src={img} class="img-fluid" alt={alt} style="object-fit: contain;">
+    <div class="member-info">
+      <div class="member-info-content">
+        <h4>{title}</h4>
+        <span>{desc}</span>
+      </div>
+      <div class="social">
+        {
+            socials.map(e => <a href={e.url} target="_blank"><i class={`bi bi-${e.social}`}></i></a>) 
+        }
+      </div>
+    </div>
+  </div>

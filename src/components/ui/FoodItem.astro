@@ -1,0 +1,23 @@
+---
+const {
+    img = 'assets/img/menu/spinach-salad.jpg',
+    alt = 'Lobster Bisque',
+    title = 'Lobster Bisque',
+    price = '5.95',
+    desc = 'Lorem, deren, trataro, filede, nerada',
+    filter = 'filter-salads'
+} = Astro.props;
+// filter-active filter-starters filter-salads filter-specialty
+
+---
+
+<div class={`col-lg-6 menu-item ${filter}`}>
+    <img src={img} class="menu-img" alt={alt} style="height: 5em; width: 5em; object-fit: contain;">
+    <div class="menu-content">
+      <a href="#">{title}</a><span>${price}</span>
+    </div>
+    <div class="menu-ingredients">
+      {desc}
+    </div>
+</div>
+

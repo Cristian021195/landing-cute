@@ -1,0 +1,32 @@
+---
+const {
+    title='Cumpleaños',
+    price=15000,
+    resume='La reserva de cumpleaños esta sujeta a las siguientes condiciones, y por supuesto nos reservamos el derecho de adminision si asi lo requiere.',
+    items=['Item #1', 'Item #2', 'Item #3'],
+    desc='El bar segun disposicion, puede guardar postres, tortas, helado de los organizadores, como asi tambien presta los utilitarios y vajillas para el evento.',
+    img='*'
+} = Astro.props;
+---
+<div class="swiper-slide">
+    <div class="row event-item">
+        <div class="col-lg-6">
+            <img src={img} class="img-fluid" alt="swiper image" style="height: 25em; object-fit: contain;">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+        <h3>{title}</h3>
+        <div class="price">
+            <p><span>${price}</span></p>
+        </div>
+        <p class="fst-italic">
+            {resume}
+        </p>
+        <ul>
+            {items.map(e=><li>{e}</li>)}
+        </ul>
+        <p>
+            {desc}
+        </p>
+        </div>
+    </div>
+</div>

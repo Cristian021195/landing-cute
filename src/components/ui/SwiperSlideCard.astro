@@ -1,0 +1,21 @@
+---
+const {
+    title='',
+    resume='',
+    desc='',
+    img='',
+    alt='',
+} = Astro.props;
+---
+<div class="swiper-slide">
+    <div class="testimonial-item">
+      <p>
+        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          {resume}
+        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+      </p>
+      <img src={img} class="testimonial-img" alt={title} style="object-fit: contain;">
+      <h3>{title}</h3>
+      <h4>{desc}</h4>
+    </div>
+</div>

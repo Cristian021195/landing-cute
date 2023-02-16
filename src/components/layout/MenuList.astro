@@ -1,0 +1,41 @@
+---
+import FoodItem from "../ui/FoodItem.astro";
+
+
+---
+<section id="menu" class="menu section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Menú</h2>
+        <p>Mirá nuestros platos más recientes</p>
+      </div>
+
+      <div class="row" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-starters">Principales</li>
+            <li data-filter=".filter-salads">Tragos</li>
+            <li data-filter=".filter-specialty">Especiales</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row menu-container" data-aos-delay="200">
+
+        <FoodItem title='Papas Romano' img='assets/img/menu/papas.webp' desc='Cheddar, cebolla, panceta, huevo' price={650} filter='filter-active'/>
+        <FoodItem title='Milanesa' img='assets/img/menu/milanesa.webp' desc='Jamón, huevo, queso.' price={450} filter='filter-active'/>
+        <FoodItem title='Hamburguesa' img='assets/img/menu/burger.webp' desc='Americana, Romana, Mexicana, Argentina, Clásica' price={1300} filter='filter-active'/>
+        <FoodItem title='Carne Asada' img='assets/img/menu/carne.webp' desc='Viene con ensaladas' price={1300} filter='filter-starters'/>
+        <FoodItem title='Empanadas' img='assets/img/menu/empanada.webp' desc='Pollo, Vaca, Jamón y Queso, Verduras, Atún, Choclo' price={1400} filter='filter-starters'/>
+        <FoodItem title='Pizza Italiana' img='assets/img/menu/pizza.webp' desc='Italiana, Americana, Clásica Argentina, Hawaiana' price={1600} filter='filter-starters'/>
+        <FoodItem title='Picada Romana' img='assets/img/menu/picada.webp' desc='Jamón Crudo, Cocido, Salame, Salamín, Mortadela, Jamón primavera, Aceitunas y Tomates Cherry' price={450} filter='filter-specialty'/>
+        <FoodItem title='Ravioles' img='assets/img/menu/ravioles.webp' desc='Espinaca, Jamón, Salmon, Salsa Blanca' price={1200} filter='filter-specialty'/>
+        <FoodItem title='Red Robin' img='assets/img/menu/redrobin.webp' desc='Almíbar, Frutilla, Pimiento Rojo, Limón' price={450} filter='filter-salads'/>
+        <FoodItem title='Mojito' img='assets/img/menu/mojito.webp' desc='Limón, Menta, Jengibre, Ron' price={450} filter='filter-salads'/>
+
+      </div>
+
+    </div>
+  </section>

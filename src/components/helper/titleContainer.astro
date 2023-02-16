@@ -1,0 +1,13 @@
+---
+const {
+    title = 'Inicio',
+    left_color = '--red-0',
+    right_color = '--blue-0'
+} = Astro.props;
+---
+<div class="row">
+    <div class="col-12 col-md-8 pt-4" style={`background-color: var(${left_color}); text-align: center;`}>
+        <h1 style="font-size: 3.5em;">{title}</h1>
+    </div>
+    <div class="col-12 col-md-4" style={`background-color: var(${right_color});`}></div>
+</div>

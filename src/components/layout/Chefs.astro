@@ -1,0 +1,59 @@
+---
+import ChefCard from "../ui/ChefCard.astro";
+
+
+---
+<section id="chefs" class="chefs">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Cocineros - Bartenders</h2>
+        <p>Nuestros mejores profesionales</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+            <ChefCard
+              img = '/assets/img/chefs/chef-1.webp'
+              alt = 'Germán Martitegui'
+              title = 'Germán Martitegui'
+              desc = ''
+              socials = {[
+                {social: 'facebook', url:'https://www.facebook.com/germanmartitegui'},
+                {social: 'instagram', url: 'https://www.instagram.com/germanmartitegui'},
+                {social: 'twitter', url: 'https://twitter.com/germantegui'}
+              ]}
+            />
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <ChefCard
+              img = '/assets/img/chefs/chef-2.webp'
+              alt = 'Donato de Santis'
+              title = 'Donato de Santis'
+              desc = ''
+              socials = {[
+                {social: 'facebook', url:'https://www.facebook.com/desantisdonato'},
+                {social: 'instagram', url: 'https://www.instagram.com/donatodesantis'},
+                {social: 'twitter', url: 'https://twitter.com/Donatodesantis'}
+              ]}
+            />
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <ChefCard
+              img = '/assets/img/chefs/chef-3.webp'
+              alt = 'Christophe Krywonis'
+              title = 'Christophe Krywonis'
+              desc = ''
+              socials = {[
+                {social: 'facebook', url:'https://www.facebook.com/mundochristophe'},
+                {social: 'instagram', url: 'https://www.instagram.com/mundochristophe'},
+                {social: 'twitter', url: 'https://twitter.com/mundochristophe'}
+              ]}
+            />
+        </div>
+
+      </div>
+
+    </div>
+  </section>

@@ -1,0 +1,23 @@
+---
+    const {md_value = '4',
+        url_src = 'https://i0.wp.com/blog.rescuetime.com/wp-content/uploads/2019/04/Digital-Minimalism-Lead.jpg?resize=1000%2C486&ssl=1',
+        bg_color = '--red-0',
+        title_h1 = '',
+        title_h2 = '',
+        description = ''
+        } = Astro.props;
+---
+<article class={`col-md-${md_value} col-12 d-flex align-items-center justify-content-center p-4`} style={`background-color: var(${bg_color});`}>
+    <div class="text-center">
+        <h1>{title_h1} Titulo</h1>
+        <img src={url_src} alt="">
+    </div>
+</article>
+
+<!--<style>
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+</style>-->

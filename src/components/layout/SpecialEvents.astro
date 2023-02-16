@@ -1,0 +1,56 @@
+---
+import SpecialEventCard from "../ui/SpecialEventCard.astro";
+
+---
+
+<section id="events" class="events">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Eventos</h2>
+        <p>Organiza tus eventos en nuestros locales</p>
+      </div>
+
+      <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <SpecialEventCard 
+            title = 'Cumpleaños'
+            price = {15000}
+            resume = 'La reserva de cumpleaños esta sujeta a las siguientes condiciones, y por supuesto nos reservamos el derecho de adminision si asi lo requiere.'
+            items = {
+              ['Recomendamos Llamar con una semana de anticipación o más.',
+              'Informar con exactitud el numero de personas y preferencia de ubicación.',
+              'El cumpleañoero debe presentarse con DNI.']}
+            desc = 'El bar segun disposicion, puede guardar postres, tortas, helado de los organizadores, como asi tambien presta los utilitarios y vajillas para el evento.'
+            img = '/assets/img/cumple.webp'
+          />
+          <SpecialEventCard
+            img = '/assets/img/privado.webp'
+            title = 'Eventos Privados'
+            price = {10000}
+            resume = 'A diferencia de la reseva anterior, es para una menor cantidad de personas, mas silencio y atencion diferenciada por telefono.'
+            items = {
+              ['Recomendamos Llamar con una semana de anticipación o más.',
+              'Informar con exactitud el numero de personas y preferencia de ubicación.',
+              'Deben presentar documentación que respalde dicha reunion, ya sea de integrantes o empresa.']}
+            desc = 'Prestamos proyector, sistemas de sonidos y cafetera.'
+          />
+          <SpecialEventCard
+            img = '/assets/img/privacidad.webp'
+            title = 'Privacidad Total'
+            price = {5000}
+            resume = 'Se ajusta a los siguientes requerimentos: '
+            items = {
+              ['Recomendamos Llamar con 3 dias de anticipación o más.',
+              'Solo hasta 3 personas.',
+              'Todos deben concurrir con DNI.']}
+            desc = 'No hay servicios extras.'
+          />
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>

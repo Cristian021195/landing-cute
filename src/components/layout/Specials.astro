@@ -1,0 +1,71 @@
+---
+import SpecialsCard from "../ui/SpecialsCard.astro";
+---
+
+<section id="specials" class="specials">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Especiales</h2>
+        <p>Mira nuestros especiales</p>
+      </div>
+
+      <div class="row" data-aos-delay="100">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Papas Romano</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Pizza Italiana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Sanguche de Milanesa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Mojito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Red Robin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <SpecialsCard  title='Papas Romano' img='/assets/img/papas.webp' alt='Papas romano' 
+                resume='Papas con chédar, panceta, cebolla de verdeo, y huevo.' 
+                desc='Es un clásico de muchos bares y restáurantes de la zona, aunque nosotros vamos más allá y tenemos las variantes sin TACC y fritura sin aceite.' 
+              />
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <SpecialsCard  title='Pizza Italiana' img='/assets/img/pizza.webp' alt='Piza Italiana' 
+                resume='Es la receta de la real pizza italiana. Salsa con tomates triturados en el día, condimentada a punto.' 
+                desc='masa suave y dos tipos de quesos. Viene acompañada de bastones de pan como entrada.' 
+              />
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <SpecialsCard  title='Sanguche de Milanesa' img='/assets/img/milanesa.webp' alt='Sanguche de Milanesa' 
+                resume='Si bien hay muchas variantes a lo largo del país, elegimos la mejor, el de la provincia de Tucumán' 
+                desc='Con tomate y Lechuga picada, aderezos condimentados, y con las variantes para todos, de Carne clásica, de pollo, o para los vegetarianos, de soja.' 
+              />
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <SpecialsCard  title='Mojito' img='/assets/img/mojito.webp' alt='Mojito' 
+                resume='El mojito es uno de los tragos con alcohol más refrescantes sin gas.' 
+                desc='Tenemos como variantes, con lima, limón con jengibre o sin, y una nueva con pimiento y pepino.' 
+              />
+            </div>
+            
+            <div class="tab-pane" id="tab-5">
+              <SpecialsCard  title='Red Robin' img='/assets/img/redrobin.webp' alt='Red Robin' 
+                resume='Es el trago rojo para los amantes de las bebidas sin alcohol.' 
+                desc='Su color rojizo tiene su razón, está hecho a base de limón, Pimiento Rojo, frutilla, jengibre y almíbar.' 
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

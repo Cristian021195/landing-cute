@@ -1,0 +1,19 @@
+---
+const {
+    title='Papas Romano',
+    resume='Papas con chedar, panceta, cebolla de verdeo, y huevo.',
+    desc='Es un clasico de muchos bares y restaurantes de la zona, aunque nosotros vamos mas alla y tenemos las variantes sin TACC y fritura sin aceite.',
+    img='assets/img/papas.webp',
+    alt='Papas romano',
+} = Astro.props;
+---
+<div class="row">
+    <div class="col-lg-8 details order-2 order-lg-1">
+        <h3>{title}</h3>
+        <p class="fst-italic">{resume}</p>
+        <p>{desc}</p>
+    </div>
+    <div class="col-lg-4 text-center order-1 order-lg-2">
+        <img src={img} alt={alt} class="img-fluid" style="height: 15em;">
+    </div>
+</div>

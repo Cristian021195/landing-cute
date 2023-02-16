@@ -1,0 +1,15 @@
+---
+    const {
+        number = 0,
+        title = 'Lorem Title',
+        desc = 'Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat'
+    } = Astro.props;
+---
+
+<div class="col-lg-4 mt-4 mt-lg-0">
+    <div class="box">
+      <span>{number}</span>
+      <h4>{title}</h4>
+      <p>{desc}</p>
+    </div>
+  </div>
